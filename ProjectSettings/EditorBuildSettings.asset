@@ -20,4 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/IRONHEAD Games/Assets/Scenes/Scene_GameModeSelection.unity
     guid: 2a4ba00ba353c2147b55f99f1a9c4c44
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2e8f5f59d8b9c4150844fe381af67542,
+      type: 2}
