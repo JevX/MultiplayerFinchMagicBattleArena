@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd607c3f010ab45a29ecfcf8d5a898ef, type: 3}
   m_Name: Settings
   m_EditorClassIdentifier: 
-  ARCompanionAppIP: 192.168.0.
+  ARCompanionAppIP: 192.168.0.101
   editorGameViewSettings:
     resolutionScale: 0.33333334
     maxEditorViewFps: 10
@@ -37,23 +37,14 @@ MonoBehaviour:
     version: 4.11.0
     id: com.kyrylokuzyk.arfoundationremote
   - displayName: AR Foundation
-    version: 4.2.0-pre.5
+    version: 4.0.2
     id: com.unity.xr.arfoundation
   - displayName: ARCore XR Plugin
-    version: 4.2.0-pre.5
+    version: 4.0.4
     id: com.unity.xr.arcore
   - displayName: ARKit XR Plugin
-    version: 4.2.0-pre.4
+    version: 4.0.2
     id: com.unity.xr.arkit
-  - displayName: ARKit Face Tracking
-    version: 4.2.0-pre.4
-    id: com.unity.xr.arkit-face-tracking
-  - displayName: ARCore Extensions + AR Foundation Remote
-    version: 1.23.0
-    id: com.kyrylokuzyk.arfoundationremote.arcoreextensions
-  - displayName: Input System
-    version: 1.0.2
-    id: com.unity.inputsystem
   port: 44819
   embeddedImageLibraries: []
   debugSettings:
