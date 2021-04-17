@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/TEST_Multiplayer/Scenes/TestConnectARMultiplayer.unity
+    guid: c94aa3e5caa7d70448b005a840b494b1
+  - enabled: 1
+    path: Assets/TEST_Multiplayer/Scenes/TestARMultiplayer.unity
+    guid: 321492c0baff4704cadb10f8fcc634d7
+  - enabled: 1
     path: Assets/IRONHEAD Games/Assets/Scenes/Scene_Lobby.unity
     guid: 440fab74dfb736d46908c287bf83005f
   - enabled: 1
