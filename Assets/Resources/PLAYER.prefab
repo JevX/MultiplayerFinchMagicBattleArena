@@ -228,3 +228,4 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   nameObjectAnchor: MAIN_OBJECT
+  nameCameraOnScene: AR Camera
