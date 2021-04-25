@@ -1,6 +1,8 @@
-﻿    using Photon.Pun;
-    using UnityEngine;
+﻿using Photon.Pun;
+using UnityEngine;
 
+namespace Main.PhotonAR
+{
     public class PhotonTransformViewAR : MonoBehaviourPun, IPunObservable
     {
         private float m_Distance;
@@ -101,7 +103,7 @@
                     {
                         float lag = Mathf.Abs((float)(PhotonNetwork.Time - info.SentServerTime));
                         this.m_NetworkPosition += this.m_Direction * lag;
-                            this.m_Distance = Vector3.Distance( cacheTr.position, this.m_NetworkPosition);
+                        this.m_Distance = Vector3.Distance( cacheTr.position, this.m_NetworkPosition);
                     }
 
                 }
@@ -134,3 +136,4 @@
             }
         }
     }
+}

@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Main/Scenes/ARLoadingScreen.unity
+    path: Assets/Main/SINGLE/Scenes/ARLoadingScreen.unity
     guid: beb1d27c283fa4d8fae88694bac8667f
   - enabled: 1
-    path: Assets/Main/Scenes/ARDemoScene.unity
+    path: Assets/Main/SINGLE/Scenes/ARDemoScene.unity
     guid: 273d8c955866545f4ae8d1d93cd94f4b
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ddcda873b38e446078114481b32c35e3,

@@ -1,18 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PhotonTransformViewARPlayer : PhotonTransformViewAR
+namespace Main.PhotonAR
 {
-    protected override void AwakeMethod()
+    public class PhotonTransformViewARPlayer : PhotonTransformViewAR
     {
-        base.AwakeMethod();
-        
-    }
-
-    protected override Quaternion GetCurrentRotation()
-    {
-        return cacheTr.parent.rotation;
-    }
+        [SerializeField] private string nameCameraOnScene = "AR Camera";
     
+        private Transform mainObjectAnchor = null;
+        protected override void AwakeMethod()
+        {
+            base.AwakeMethod();
+            mainObjectAnchor = GameObject.Find(nameCameraOnScene).transform;
+        }
+
+        protected override Quaternion GetCurrentRotation()
+        {
+            return mainObjectAnchor?.rotation ?? cacheTr.parent.rotation;
+        }
+    
+    }
 }
