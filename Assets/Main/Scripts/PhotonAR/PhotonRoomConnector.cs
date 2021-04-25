@@ -70,10 +70,7 @@ namespace Main.Scripts.PhotonAR
         public override void OnJoinedRoom()
         {
             Debug.Log( "Подключен к комнате " + PhotonNetwork.CurrentRoom.Name);
-            if (PhotonNetwork.IsMasterClient)
-            {
-                SetActiveNextUI(true);
-            }
+            SetActiveNextUI(true);
         }
 
     }

@@ -1,13 +1,23 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 
 namespace Main.Scripts
 {
-    public class SceneLoadManager : Singleton<SceneLoader>
+    public class SceneLoadManager : MonoBehaviour
     {
         [SerializeField] private string nameSceneLoad = null;
-    
+
+        public static SceneLoadManager Instance = null;
+        
         private string sceneNameToBeLoaded;
+
+        private void Awake()
+        {
+            if (Instance == null) Instance = this;
+            else Destroy(gameObject);
+            DontDestroyOnLoad(gameObject);
+        }
 
         public void LoadScene(string _sceneName)
         {
