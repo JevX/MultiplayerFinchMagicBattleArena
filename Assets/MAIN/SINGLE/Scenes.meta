@@ -1,8 +1,14 @@
+<<<<<<<< HEAD:Assets/MAIN/SINGLE/Scenes.meta
 fileFormatVersion: 2
-guid: 4a6e508ab1888b6408aa23dda38aed03
+guid: fa0a72eb204fa4f4dbd6abc5b6009a84
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+========
+﻿fileFormatVersion: 2
+guid: 675c44858a674dfcb720e4710e7f1b76
+timeCreated: 1619346989
+>>>>>>>> main:Assets/Main.meta
