@@ -1,6 +1,26 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream:Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta
 guid: 381dcb09d5029d14897e55f98031fca5
 TextScriptImporter:
+=======
+guid: 4a01241e1aa106c43aa2dce10b3e3f1c
+DefaultImporter:
+>>>>>>> Stashed changes:Assets/SpecialSkillsEffectsPack/Patch/Toon/ToonTypeMaterial(LinearSpace).unitypackage.meta
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD:Assets/SpecialSkillsEffectsPack/Patch/Materials/GammaSpaceMaterials(WithoutNormal).unitypackage.meta
+guid: d88a9f1be4cfb2646bd1b0084e535962
+=======
+<<<<<<< HEAD:Assets/SpecialSkillsEffectsPack/Patch/Prefebs/OptimizedEffectsPrefebs.unitypackage.meta
+guid: c4611bf8be70ae540ade09453eecdaa2
+>>>>>>> 9120da4c02f09cf8004cf0e9f1109b76863a606c
+DefaultImporter:
+=======
+guid: 381dcb09d5029d14897e55f98031fca5
+TextScriptImporter:
+>>>>>>> 9120da4c02f09cf8004cf0e9f1109b76863a606c:Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta
+>>>>>>> Stashed changes
   externalObjects: {}
   userData: 
   assetBundleName: 

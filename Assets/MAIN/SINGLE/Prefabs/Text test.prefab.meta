@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream:Assets/Main/Prefabs/Text test.prefab.meta
+guid: 57b0a60250a8ab142a65fc34d2fd138f
+PrefabImporter:
+=======
+guid: a1a69a506bef8ad4fa7253396fc74e23
+DefaultImporter:
+>>>>>>> Stashed changes:Assets/SpecialSkillsEffectsPack/Patch/Toon/ToonTypeMaterial(GammaSpace).unitypackage.meta
+=======
+<<<<<<< HEAD:Assets/SpecialSkillsEffectsPack/Patch/Materials/LinearSpaceMaterials.unitypackage.meta
+guid: e9440ce0baf310947a0ce5ecbc2a7e0d
+DefaultImporter:
+=======
+guid: 57b0a60250a8ab142a65fc34d2fd138f
+PrefabImporter:
+>>>>>>> 9120da4c02f09cf8004cf0e9f1109b76863a606c:Assets/Main/Prefabs/Text test.prefab.meta
+>>>>>>> Stashed changes
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

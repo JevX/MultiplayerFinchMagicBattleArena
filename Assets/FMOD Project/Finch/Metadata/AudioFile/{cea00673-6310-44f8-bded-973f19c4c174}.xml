@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{cea00673-6310-44f8-bded-973f19c4c174}">
+		<property name="assetPath">
+			<value>Удержание магии лд как эффекта.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>16.125</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{67e883fe-a38c-4e32-9737-f995c069b371}</destination>
+		</relationship>
+	</object>
+</objects>

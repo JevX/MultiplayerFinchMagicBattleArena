@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="EventFolder" id="{70f61c89-6e90-47b5-8d57-efefc305980a}">
+		<property name="name">
+			<value>Ледянная глыба</value>
+		</property>
+		<relationship name="folder">
+			<destination>{7989890e-8fd9-480e-a8bc-54a93e78647d}</destination>
+		</relationship>
+	</object>
+</objects>

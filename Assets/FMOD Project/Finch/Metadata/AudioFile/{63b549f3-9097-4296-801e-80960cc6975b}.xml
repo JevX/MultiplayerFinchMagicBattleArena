@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{63b549f3-9097-4296-801e-80960cc6975b}">
+		<property name="assetPath">
+			<value>Звук удара после выброса.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.4765625</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{67e883fe-a38c-4e32-9737-f995c069b371}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="Bank" id="{bc5d6379-e794-4ad0-a0fe-7a923108dc36}">
+		<property name="name">
+			<value>Телекинез</value>
+		</property>
+		<relationship name="folder">
+			<destination>{b3f20ab0-7080-4295-82f2-baf30c884ace}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa5f2bcc6ca6a02418dd5828edb5baa0, type: 3}
+  m_Name: Progression Data
+  m_EditorClassIdentifier: 
+  stageData:
+  - stageName: Tutorial
+    standartTargets: 1
+    minimumHealth: 1
+    maximumHealth: 2
+    chanceToHaveAShield: 0
+    specialTargets: 0
+    specialTargetMinimumHealth: 0
+    specialTargetMaximumHealth: 0
+  - stageName: Tutorial
+    standartTargets: 2
+    minimumHealth: 1
+    maximumHealth: 1
+    chanceToHaveAShield: 1
+    specialTargets: 0
+    specialTargetMinimumHealth: 0
+    specialTargetMaximumHealth: 0
+  - stageName: Easy 1
+    standartTargets: 2
+    minimumHealth: 2
+    maximumHealth: 2
+    chanceToHaveAShield: 0.45
+    specialTargets: 0
+    specialTargetMinimumHealth: 0
+    specialTargetMaximumHealth: 0
+  - stageName: Easy 2
+    standartTargets: 3
+    minimumHealth: 2
+    maximumHealth: 3
+    chanceToHaveAShield: 0.2
+    specialTargets: 0
+    specialTargetMinimumHealth: 0
+    specialTargetMaximumHealth: 0
+  - stageName: Easy 3
+    standartTargets: 0
+    minimumHealth: 0
+    maximumHealth: 0
+    chanceToHaveAShield: 0.2
+    specialTargets: 1
+    specialTargetMinimumHealth: 2
+    specialTargetMaximumHealth: 2
+  - stageName: Normal 1
+    standartTargets: 3
+    minimumHealth: 3
+    maximumHealth: 4
+    chanceToHaveAShield: 0.5
+    specialTargets: 0
+    specialTargetMinimumHealth: 0
+    specialTargetMaximumHealth: 0
+  - stageName: Normal 2
+    standartTargets: 6
+    minimumHealth: 2
+    maximumHealth: 2
+    chanceToHaveAShield: 0.24
+    specialTargets: 0
+    specialTargetMinimumHealth: 0
+    specialTargetMaximumHealth: 0
+  - stageName: Normal 3
+    standartTargets: 15
+    minimumHealth: 1
+    maximumHealth: 1
+    chanceToHaveAShield: 0.07
+    specialTargets: 0
+    specialTargetMinimumHealth: 0
+    specialTargetMaximumHealth: 0
+  - stageName: Hard 1
+    standartTargets: 4
+    minimumHealth: 1
+    maximumHealth: 3
+    chanceToHaveAShield: 0.2
+    specialTargets: 0
+    specialTargetMinimumHealth: 0
+    specialTargetMaximumHealth: 0
+  - stageName: Hard 2
+    standartTargets: 6
+    minimumHealth: 1
+    maximumHealth: 1
+    chanceToHaveAShield: 0.23
+    specialTargets: 0
+    specialTargetMinimumHealth: 0
+    specialTargetMaximumHealth: 0
+  - stageName: Hard 3
+    standartTargets: 3
+    minimumHealth: 3
+    maximumHealth: 4
+    chanceToHaveAShield: 0.2
+    specialTargets: 0
+    specialTargetMinimumHealth: 0
+    specialTargetMaximumHealth: 0
+  - stageName: Final Stage
+    standartTargets: 8
+    minimumHealth: 2
+    maximumHealth: 2
+    chanceToHaveAShield: 0
+    specialTargets: 1
+    specialTargetMinimumHealth: 8
+    specialTargetMaximumHealth: 8

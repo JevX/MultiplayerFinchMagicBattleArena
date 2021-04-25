@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream:Assets/Main/Images/ScoreMenu.meta
+guid: 7f300f9ec31b9e049ae8e60f99d09eb8
+=======
+guid: e45c8d5495479664d9861bcb585c36fd
+>>>>>>> Stashed changes:Assets/Main/Images/ScoreMenu/Components Score Menu/2x.meta
+=======
+<<<<<<< HEAD:Assets/Plugins/FMOD/Cache/Editor.meta
+guid: ecfcb1e45bf96488b9b54fa3dedae3cd
+=======
+guid: 7f300f9ec31b9e049ae8e60f99d09eb8
+>>>>>>> 9120da4c02f09cf8004cf0e9f1109b76863a606c:Assets/Main/Images/ScoreMenu.meta
+>>>>>>> Stashed changes
+folderAsset: yes
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

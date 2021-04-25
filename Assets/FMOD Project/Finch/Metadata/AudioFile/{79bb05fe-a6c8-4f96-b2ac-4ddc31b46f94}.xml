@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{79bb05fe-a6c8-4f96-b2ac-4ddc31b46f94}">
+		<property name="assetPath">
+			<value>Появление молнии.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{67e883fe-a38c-4e32-9737-f995c069b371}</destination>
+		</relationship>
+	</object>
+</objects>

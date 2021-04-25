@@ -22,7 +22,7 @@ public class SceneLoader : Singleton<SceneLoader>
     {
 
         //First, we load the Loading scene
-        yield return SceneManager.LoadSceneAsync("Scene_Loading");
+        yield return UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("Scene_Loading");
 
         //Load the actual scene
         StartCoroutine(LoadActualyScene());
@@ -34,7 +34,7 @@ public class SceneLoader : Singleton<SceneLoader>
     IEnumerator LoadActualyScene()
     {
 
-        var asyncSceneLoading = SceneManager.LoadSceneAsync(sceneNameToBeLoaded);
+        var asyncSceneLoading = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneNameToBeLoaded);
 
         //this value stops the scene from displaying when it is still loading...
         asyncSceneLoading.allowSceneActivation = false;

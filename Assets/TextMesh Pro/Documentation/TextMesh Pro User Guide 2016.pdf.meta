@@ -1,5 +1,22 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream:Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf.meta
 guid: 1b8d251f9af63b746bf2f7ffe00ebb9b
+=======
+guid: 9a5ac2b92d29ab342b5498a839770c3b
+>>>>>>> Stashed changes:Assets/SpecialSkillsEffectsPack/Patch/Prefebs/OriginalEffectsPrefebs.unitypackage.meta
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD:Assets/SpecialSkillsEffectsPack/Patch/Materials/GammaSpaceMaterials.unitypackage.meta
+guid: 55668f51bd7062247ab47ae6db04b65a
+=======
+<<<<<<< HEAD:Assets/SpecialSkillsEffectsPack/Patch/Materials/LinearSpaceMaterials(WithoutNormal).unitypackage.meta
+guid: 3767b098f83b28d4a83c7866e98bf549
+>>>>>>> 9120da4c02f09cf8004cf0e9f1109b76863a606c
+=======
+guid: 1b8d251f9af63b746bf2f7ffe00ebb9b
+>>>>>>> 9120da4c02f09cf8004cf0e9f1109b76863a606c:Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf.meta
+>>>>>>> Stashed changes
 DefaultImporter:
   externalObjects: {}
   userData: 

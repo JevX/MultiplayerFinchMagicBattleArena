@@ -1,5 +1,5 @@
 
-=== Thu Apr  8 21:27:36 2021
+=== Wed Feb 10 23:51:26 2021
 
 Packages were changed.
 Update Mode: mergeDefaultDependencies
@@ -43,15 +43,3 @@ The following packages were added:
   com.unity.textmeshpro@2.0.1
   com.unity.timeline@1.2.13
   com.unity.ugui@1.0.0
-
-=== Thu Apr  8 21:34:19 2021
-
-Packages were changed.
-Update Mode: mergeDefaultDependencies
-
-The following packages were added:
-  com.unity.ext.nunit@1.0.0
-  com.unity.package-manager-ui@2.2.0
-  com.unity.xr.arcore@3.1.0-preview.1
-  com.unity.xr.arfoundation@3.1.0-preview.1
-  com.unity.xr.arkit@3.1.0-preview.1

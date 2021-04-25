@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="Bank" id="{40558e0e-c1f7-4751-a2e7-ca7fd8a37ecf}">
+		<property name="name">
+			<value>Огненный шар</value>
+		</property>
+		<relationship name="folder">
+			<destination>{b3f20ab0-7080-4295-82f2-baf30c884ace}</destination>
+		</relationship>
+	</object>
+</objects>

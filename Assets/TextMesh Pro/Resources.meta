@@ -1,5 +1,22 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream:Assets/TextMesh Pro/Resources.meta
 guid: 243e06394e614e5d99fab26083b707fa
+=======
+guid: f3792385637fe0348b30518e126c4115
+>>>>>>> Stashed changes:Assets/Main/Images/Tutorial/1x/EInfoTut.meta
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD:Assets/Plugins/FMOD/Resources.meta
+guid: dd3627b88a07042fd9aec87bb8202e77
+=======
+<<<<<<< HEAD:Assets/Main/Images/Tutorial/1x/ActivationTut.meta
+guid: e480e535ec234e442a33c0a99487c323
+>>>>>>> 9120da4c02f09cf8004cf0e9f1109b76863a606c
+=======
+guid: 243e06394e614e5d99fab26083b707fa
+>>>>>>> 9120da4c02f09cf8004cf0e9f1109b76863a606c:Assets/TextMesh Pro/Resources.meta
+>>>>>>> Stashed changes
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
