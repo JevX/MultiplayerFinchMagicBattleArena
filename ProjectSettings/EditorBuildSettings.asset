@@ -6,13 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Main/Scenes/Lobby.unity
+    path: Assets/MAIN/Scenes/Lobby.unity
     guid: 3747d2ca245b22745b258040f6305a1a
   - enabled: 1
-    path: Assets/Main/Scenes/GameMultiplayer.unity
+    path: Assets/MAIN/Scenes/GameMultiplayer.unity
     guid: 9e761b49b35819a4895722aae36497eb
   - enabled: 1
-    path: Assets/Main/Scenes/GameLocal.unity
+    path: Assets/MAIN/Scenes/GameLocal.unity
     guid: 69914a48278ef144592dc888b6e88dde
   - enabled: 0
     path: Assets/IRONHEAD Games/Assets/Scenes/Scene_Lobby.unity
@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/IRONHEAD Games/Assets/Scenes/Scene_GameModeSelection.unity
     guid: 2a4ba00ba353c2147b55f99f1a9c4c44
   - enabled: 1
-    path: Assets/Main/Scenes/LoadScene.unity
+    path: Assets/MAIN/Scenes/LoadScene.unity
     guid: d06d5f49b6ae5454b99830de3b9ddf47
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2e8f5f59d8b9c4150844fe381af67542,
