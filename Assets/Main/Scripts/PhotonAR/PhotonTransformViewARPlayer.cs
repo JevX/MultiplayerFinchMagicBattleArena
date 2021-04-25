@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Main.Scripts.PhotonAR;
 using UnityEngine;
 
 public class PhotonTransformViewARPlayer : PhotonTransformViewAR

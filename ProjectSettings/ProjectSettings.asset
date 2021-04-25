@@ -164,6 +164,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.finchnocscab.multiplayerar
+    Standalone: com.FinchNocscab.MultiplayerBayBlade
     iPhone: com.FinchNocscab.MultiplayerBayBlade
   buildNumber: {}
   AndroidBundleVersionCode: 1

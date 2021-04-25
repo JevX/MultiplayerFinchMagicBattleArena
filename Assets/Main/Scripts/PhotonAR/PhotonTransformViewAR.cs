@@ -1,27 +1,25 @@
-﻿    using Photon.Pun;
-    using UnityEngine;
+﻿using Photon.Pun;
+using UnityEngine;
 
+namespace Main.Scripts.PhotonAR
+{
     public class PhotonTransformViewAR : MonoBehaviourPun, IPunObservable
-    {
-        private float m_Distance;
-        private float m_Angle;
-
-        private Vector3 m_Direction;
-        private Vector3 m_NetworkPosition;
-        private Vector3 m_StoredPosition;
-
-        private Quaternion m_NetworkRotation;
-
-        private Transform objectAnchor = null;
-        
+    {   
         public bool m_SynchronizePosition = true;
         public bool m_SynchronizeRotation = true;
         public bool m_SynchronizeScale = false;
         
         [SerializeField] private string nameObjectAnchor = "MAIN_OBJECT";
-
-        bool m_firstTake = false;
-
+        
+        private float m_Distance;
+        private float m_Angle;
+        private Vector3 m_Direction;
+        private Vector3 m_NetworkPosition;
+        private Vector3 m_StoredPosition;
+        private Quaternion m_NetworkRotation;
+        private bool m_firstTake = false;
+        
+        private Transform objectAnchor = null;
         protected Transform cacheTr;
         
         public void Awake()
@@ -34,10 +32,7 @@
             AwakeMethod();
         }
 
-        protected virtual void AwakeMethod()
-        {
-            
-        }
+        protected virtual void AwakeMethod(){}
 
         void OnEnable()
         {
@@ -101,7 +96,7 @@
                     {
                         float lag = Mathf.Abs((float)(PhotonNetwork.Time - info.SentServerTime));
                         this.m_NetworkPosition += this.m_Direction * lag;
-                            this.m_Distance = Vector3.Distance( cacheTr.position, this.m_NetworkPosition);
+                        this.m_Distance = Vector3.Distance( cacheTr.position, this.m_NetworkPosition);
                     }
 
                 }
@@ -134,3 +129,4 @@
             }
         }
     }
+}
