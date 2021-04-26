@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using ExitGames.Client.Photon;
 using Photon.Pun;
@@ -26,6 +27,10 @@ public class SpawnPlayerManager : MonoBehaviourPunCallbacks
         PhotonNetwork.NetworkingClient.EventReceived += OnEvent;
     }
 
+    private void Update()
+    {
+        if (playerGameobject2 != null) textDebug.text = $"{name} {transform.rotation} + {transform.localRotation}";
+    }
 
     private void OnDestroy()
     {
@@ -61,43 +66,12 @@ public class SpawnPlayerManager : MonoBehaviourPunCallbacks
     {
         textDebug.text = $"{textDebug.text}\n{text}";
     }
+
+    private GameObject playerGameobject2 =null;
     private void SpawnPlayer()
     {
         Vector3 instantiatePosition = Vector3.zero; //TODO
-
-        //GameObject playerGameobject = Instantiate(playerPrefab, instantiatePosition, Quaternion.identity, cameraAR);
-        //PhotonView _photonView = playerGameobject.GetComponent<PhotonView>();
-        GameObject playerGameobject2 = PhotonNetwork.Instantiate("PLAYER", instantiatePosition, Quaternion.identity);
+        playerGameobject2 = PhotonNetwork.Instantiate("PLAYER", instantiatePosition, Quaternion.identity);
         playerGameobject2.transform.SetParent(cameraAR);
-        //if (PhotonNetwork.AllocateViewID(_photonView))
-        //{
-        //    object[] data = new object[]
-        //    {
-        //        playerGameobject.transform.position - mainObject.transform.position,
-        //        playerGameobject.transform.rotation,
-        //        _photonView.ViewID
-        //    };
-        //    
-        //    RaiseEventOptions raiseEventOptions = new RaiseEventOptions
-        //    {
-        //        Receivers = ReceiverGroup.Others,
-        //        CachingOption = EventCaching.AddToRoomCache
-//
-        //    };
-//
-        //    SendOptions sendOptions = new SendOptions
-        //    {
-        //        Reliability = true
-        //    };
-//
-        //    //Raise Events!
-        //    PhotonNetwork.RaiseEvent((byte) RaiseEventCodes.PlayerSpawnEventCode, data, raiseEventOptions, sendOptions);
-        //}
-        //else
-        //{
-//
-        //    Debug.Log("Failed to allocate a viewID");
-        //    Destroy(playerGameobject);
-        //}
     }
 }

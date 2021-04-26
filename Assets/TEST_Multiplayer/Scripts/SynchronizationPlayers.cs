@@ -34,7 +34,7 @@ public class SynchronizationPlayers : MonoBehaviourPun, IPunObservable
     {
         if (!photonView.IsMine)
         {
-            tr.position = Vector3.MoveTowards(tr.position, networkedPosition, distance*(1.0f/ PhotonNetwork.SerializationRate));
+            tr.position = Vector3.MoveTowards(tr.position, networkedPosition, Time.fixedDeltaTime);
             //tr.rotation = Quaternion.RotateTowards(tr.rotation, networkedRotation, angle*(1.0f/ PhotonNetwork.SerializationRate));
         }
 
