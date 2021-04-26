@@ -1,0 +1,222 @@
+[LOG] System::create                           : Header version = 2.01.07. Current version = 2.01.07.
+[LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0000000000000000.
+[LOG] SystemI::init                            : Initialize version=20107 (113487), maxchannels=256, flags=0x00020000
+[LOG] SystemI::setOutputInternal               : Setting output to 'FMOD WASAPI Output'
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=44100, nAvgBytesPerSec=352800, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
+[LOG] OutputWASAPI::init                       : Output buffer size: 3760 samples, latency: 11.61ms, period: 10.16ms, DSP buffer: 1024 * 4
+[LOG] SystemI::init                            : Output requires a sample rate of 44100Hz, resampling will occur.
+[LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
+[LOG] AsyncManager::init                       : manager 0000005DD809B908 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : done
+[LOG] PlaybackSystem::init                     : 
+[LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
+[LOG] PlaybackSystem::init                     : done
+[LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
+[LOG] Manager::init                            : done.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 364000
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 12864
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000005C6940EE98
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFCD0447B10
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFCD0447AE0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFCD0447BE0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFCD0447CA0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000005E38FBD298
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Меню', format=5, channels=2, frequency=48000, lengthbytes=12736, lengthpcm=41530, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.197845.
+[WRN] EventInstance::update                    : Event {818476b8-19fd-41e6-aadf-93d18abb79bc} waited 52 milliseconds for sample data to load.  Preload sample data to avoid this delay.
+[LOG] SoundI::release                          :  (0000005DD8011E68)
+[LOG] SoundI::release                          :     Меню (0000005C617FB228)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 364000
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 12864
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000005C6940EE98
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFCD0447B10
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFCD0447AE0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFCD0447BE0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFCD0447CA0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000005E3431CD58
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Меню', format=5, channels=2, frequency=48000, lengthbytes=12736, lengthpcm=41530, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.197845.
+[LOG] SoundI::release                          :  (0000005E38C29D68)
+[LOG] SoundI::release                          :     Меню (0000005E34229198)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 364000
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 12864
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000005C6940EE98
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFCD0447B10
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFCD0447AE0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFCD0447BE0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFCD0447CA0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000005E381224A8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Попадание по противнику (без прокрутки)', format=5, channels=2, frequency=48000, lengthbytes=9152, lengthpcm=30942, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.241852.
+[LOG] SoundI::release                          :  (0000005DD8011738)
+[LOG] SoundI::release                          :     Попадание по противнику (без прокрутки) (0000005C617FB3C8)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 364000
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 12864
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000005C6940EE98
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFCD0447B10
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFCD0447AE0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFCD0447BE0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFCD0447CA0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000005E38FBC218
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Попадание по противнику (с прокруткой)', format=5, channels=2, frequency=48000, lengthbytes=8448, lengthpcm=30942, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.246582.
+[WRN] EventInstance::update                    : Event {c8ae6a37-28a5-44c2-b859-a76bfbbf0acf} waited 54 milliseconds for sample data to load.  Preload sample data to avoid this delay.
+[LOG] SoundI::release                          :  (0000005E380A3DA8)
+[LOG] SoundI::release                          :     Попадание по противнику (с прокруткой) (0000005E386725A8)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 364000
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 12864
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000005C6940EE98
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFCD0447B10
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFCD0447AE0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFCD0447BE0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFCD0447CA0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000005E38FBC218
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Фанфары', format=5, channels=2, frequency=48000, lengthbytes=72224, lengthpcm=236764, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.360229.
+[LOG] SoundI::release                          :  (0000005E380A3398)
+[LOG] SoundI::release                          :     Фанфары (0000005E38671568)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 364000
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 12864
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000005C6940EE98
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFCD0447B10
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFCD0447AE0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFCD0447BE0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFCD0447CA0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000005E38FBC218
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Звук рисования', format=5, channels=2, frequency=48000, lengthbytes=20864, lengthpcm=74113, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.310608.
+[WRN] EventInstance::update                    : Event {f3e3de1d-7542-4c28-a053-44e49647ad11} waited 61 milliseconds for sample data to load.  Preload sample data to avoid this delay.
+[LOG] SoundI::release                          :  (0000005E380A30B8)
+[LOG] SoundI::release                          :     Звук рисования (0000005E38671088)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = Assets/FMOD Project/Finch Multiplayer/Build/Desktop/Телекинез.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Affinity: 0x8000000000000003, Priority: 0xFFFF7FFC, Stack Size: 114688, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
+[LOG] SystemI::createSound                     : setdata soundi = 0000005E3809E8E8 : node = 0000005C65B72590
+[LOG] SystemI::createSound                     : add node to async list : head = 0000005E342278B8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000005E3809E8E8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMOD Project/Finch Multiplayer/Build/Desktop/Телекинез.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 374432
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 10368
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000005C65B726A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Удержание телекинеза как эффекта', format=5, channels=2, frequency=48000, lengthbytes=173920, lengthpcm=722923, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.030792.
+[LOG] Thread::initThread                       :     Init FMOD file thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFC, Stack Size: 49152, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000005E3809E8E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000005E3809F818
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000005E3809F818
+[LOG] SoundI::release                          : Удержание телекинеза как эффекта (0000005E3809E8E8)
+[LOG] SoundI::release                          :     Удержание телекинеза как эффекта (0000005E38673108)
+[LOG] SoundI::release                          :     Удержание телекинеза как эффекта (0000005E3809F818)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 374432
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 10368
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000005C6940EE98
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFCD0447B10
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFCD0447AE0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFCD0447BE0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFCD0447CA0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000005E38FBC218
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Появление телекинеза', format=5, channels=2, frequency=48000, lengthbytes=13792, lengthpcm=63106, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.173920.
+[LOG] SoundI::release                          :  (0000005E380A30B8)
+[LOG] SoundI::release                          :     Появление телекинеза (0000005E38673448)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = Assets/FMOD Project/Finch Multiplayer/Build/Desktop/Multiplayer.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000005E3809EC48 : node = 0000005C65B72310
+[LOG] SystemI::createSound                     : add node to async list : head = 0000005E342278B8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000005E3809EC48
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMOD Project/Finch Multiplayer/Build/Desktop/Multiplayer.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 801120
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000005C65B72420
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Звук поиска', format=5, channels=2, frequency=48000, lengthbytes=466496, lengthpcm=1728000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.119354.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000005E3809EC48
+[LOG] SoundI::release                          : Звук поиска (0000005E3809EC48)
+[LOG] SoundI::release                          :     Звук поиска (0000005E38672C28)
+[LOG] SoundI::release                          :     Звук поиска (0000005E3809E738)
