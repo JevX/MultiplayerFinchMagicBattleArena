@@ -111,7 +111,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     /// </summary>
     public override void OnLeftRoom()
     {
-        SceneLoader.Instance.LoadScene(_sceneNameOnMatchQuit);
+        SceneLoader.Instance.LoadScene("RemoteMultyplayerLobbyScene");
     }
     #endregion
 
