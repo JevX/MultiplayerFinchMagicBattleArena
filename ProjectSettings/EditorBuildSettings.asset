@@ -6,35 +6,23 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/MAIN/Scene/Lobby.unity
-    guid: 3747d2ca245b22745b258040f6305a1a
+    path: Assets/Main/Scenes/Roma/GameModeSelectionScene.unity
+    guid: 81707ddff4bd0aa41b02574e9f580f7b
   - enabled: 1
-    path: Assets/MAIN/Scene/GameMultiplayer.unity
+    path: Assets/Main/Scenes/Roma/RemoteMultyplayerLobbyScene.unity
+    guid: d2d63262a6a1eec4a9160e745dfff0e5
+  - enabled: 1
+    path: Assets/Main/Scenes/Roma/LoadingScene.unity
+    guid: 8fdb94841424f5c47ae598fa7cf2f35a
+  - enabled: 1
+    path: Assets/Main/Scene/GameMultiplayer.unity
     guid: 9e761b49b35819a4895722aae36497eb
   - enabled: 1
-    path: Assets/MAIN/Scene/GameLocal.unity
-    guid: 69914a48278ef144592dc888b6e88dde
-  - enabled: 0
-    path: Assets/IRONHEAD Games/Assets/Scenes/Scene_Lobby.unity
-    guid: 440fab74dfb736d46908c287bf83005f
-  - enabled: 0
-    path: Assets/IRONHEAD Games/Assets/Scenes/Scene_PlayerSelection.unity
-    guid: ea015e6ac42fe3a4caeb69f71c131a7b
-  - enabled: 0
-    path: Assets/IRONHEAD Games/Assets/Scenes/Scene_Gameplay_test.unity
-    guid: ad19bf64c95a144469e802ccba0ad2fc
-  - enabled: 0
-    path: Assets/IRONHEAD Games/Assets/Scenes/Scene_Gameplay.unity
-    guid: 4dbbe6e84ff2c514d92e5c90a30c23d4
-  - enabled: 0
-    path: Assets/IRONHEAD Games/Assets/Scenes/Scene_Loading.unity
-    guid: 943f6139fa75e76479b37f37a963962e
-  - enabled: 0
-    path: Assets/IRONHEAD Games/Assets/Scenes/Scene_GameModeSelection.unity
-    guid: 2a4ba00ba353c2147b55f99f1a9c4c44
+    path: Assets/Main/SINGLE/Scenes/ARDemoScene.unity
+    guid: 273d8c955866545f4ae8d1d93cd94f4b
   - enabled: 1
-    path: Assets/MAIN/Scene/LoadScene.unity
-    guid: d06d5f49b6ae5454b99830de3b9ddf47
+    path: Assets/Main/SINGLE/Scenes/ARLoadingScreen.unity
+    guid: beb1d27c283fa4d8fae88694bac8667f
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2e8f5f59d8b9c4150844fe381af67542,
       type: 2}

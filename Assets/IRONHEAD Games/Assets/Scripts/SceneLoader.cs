@@ -1,39 +1,29 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneLoader : Singleton<SceneLoader>
 {
-
     private string sceneNameToBeLoaded;
 
     public void LoadScene(string _sceneName)
     {
         sceneNameToBeLoaded = _sceneName;
 
-
         StartCoroutine(InitializeSceneLoading());
     }
 
-
-
     IEnumerator InitializeSceneLoading()
     {
-
         //First, we load the Loading scene
-        yield return UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("Scene_Loading");
+        yield return UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("LoadingScene");
 
         //Load the actual scene
         StartCoroutine(LoadActualyScene());
-      
-
-
     }
 
     IEnumerator LoadActualyScene()
     {
-
         var asyncSceneLoading = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneNameToBeLoaded);
 
         //this value stops the scene from displaying when it is still loading...
@@ -49,15 +39,7 @@ public class SceneLoader : Singleton<SceneLoader>
                 asyncSceneLoading.allowSceneActivation = true; 
             }
 
-
             yield return null;
-
         }
-
-
-        
-
     }
-
-
 }
