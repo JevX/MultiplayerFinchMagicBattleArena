@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{9bc39155-45d8-49f6-ad5f-912f9a9506a0}">
 		<property name="name">
-			<value>Появление магии огня</value>
+			<value>The appearance of fire magic</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>

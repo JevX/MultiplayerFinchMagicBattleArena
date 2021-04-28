@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{7c5eea75-8814-4a33-ba41-f46d1251d1b2}">
 		<property name="name">
-			<value>Взрыв балистике</value>
+			<value>Explosion ballistics</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
@@ -139,13 +139,13 @@
 			<value>16460.6758</value>
 		</property>
 		<property name="frequencyB">
-			<value>83.5422211</value>
+			<value>49.7680855</value>
 		</property>
 		<property name="qualityA">
 			<value>0.581413805</value>
 		</property>
 		<property name="qualityB">
-			<value>0.751586199</value>
+			<value>0.665137947</value>
 		</property>
 	</object>
 </objects>

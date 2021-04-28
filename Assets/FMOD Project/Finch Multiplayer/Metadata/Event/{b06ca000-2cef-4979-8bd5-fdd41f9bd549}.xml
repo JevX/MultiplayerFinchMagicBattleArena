@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{b06ca000-2cef-4979-8bd5-fdd41f9bd549}">
 		<property name="name">
-			<value>Перелистование Страницы</value>
+			<value>Page Flip</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>

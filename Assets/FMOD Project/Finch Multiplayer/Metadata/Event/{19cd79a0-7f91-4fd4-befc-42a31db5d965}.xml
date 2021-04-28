@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{19cd79a0-7f91-4fd4-befc-42a31db5d965}">
 		<property name="name">
-			<value>Таймер</value>
+			<value>Timer</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{234e6546-2cbb-4702-bf43-a6d4bd51ba2f}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{13bdf8ce-55da-4fd8-acfc-b529e4081ffc}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{0bb8d9ca-fe55-4eaa-9d77-04fbb5c4f2e0}">
@@ -67,6 +70,9 @@
 		<relationship name="modules">
 			<destination>{060bb9da-2214-4a83-b1da-3ce68792f893}</destination>
 		</relationship>
+		<relationship name="markers">
+			<destination>{8d92e56d-8fa2-4277-9c4c-81f7dcfe187d}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{2956b4ec-9699-49b1-814c-7a2fcca4d2c4}">
 		<relationship name="effectChain">
@@ -94,6 +100,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{c8f2dfca-13e2-4bee-9c32-09aefebc72b2}">
+		<property name="volume">
+			<value>-9</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -105,6 +114,20 @@
 		</relationship>
 		<relationship name="output">
 			<destination>{2956b4ec-9699-49b1-814c-7a2fcca4d2c4}</destination>
+		</relationship>
+	</object>
+	<object class="LoopRegion" id="{8d92e56d-8fa2-4277-9c4c-81f7dcfe187d}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="length">
+			<value>11.25</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{234e6546-2cbb-4702-bf43-a6d4bd51ba2f}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{ae269340-2437-4041-8b38-75b9742fa840}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{065c8adb-f9b6-4869-bd75-e5edf1263372}">

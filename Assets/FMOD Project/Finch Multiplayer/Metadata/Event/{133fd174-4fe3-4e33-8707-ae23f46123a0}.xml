@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{133fd174-4fe3-4e33-8707-ae23f46123a0}">
 		<property name="name">
-			<value>Удержание магии лд как эффекта</value>
+			<value>Holding magic ice as an effect</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{f577d7fa-d2b6-4b5d-be25-35b98ac0446c}">
 		<property name="name">
-			<value>Звук выброса</value>
+			<value>Sound blowout</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{3149c23b-26fb-45ef-99bb-06369ff4e1c3}">
 		<property name="name">
-			<value>Удержание огненного шара как эффекта</value>
+			<value>Holding fireball as an effect</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>

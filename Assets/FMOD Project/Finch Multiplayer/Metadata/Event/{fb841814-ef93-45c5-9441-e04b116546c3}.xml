@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{fb841814-ef93-45c5-9441-e04b116546c3}">
 		<property name="name">
-			<value>Удержание предмета с помощью телекинеза</value>
+			<value>Holding an object with telekinesis</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
