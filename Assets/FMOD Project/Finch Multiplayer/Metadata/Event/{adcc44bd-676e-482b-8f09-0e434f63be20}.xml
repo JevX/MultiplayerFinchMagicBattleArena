@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{adcc44bd-676e-482b-8f09-0e434f63be20}">
 		<property name="name">
-			<value>Огненный шар</value>
+			<value>Fire ball</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
@@ -213,7 +213,7 @@
 			<value>14840.7773</value>
 		</property>
 		<property name="frequencyB">
-			<value>100.667625</value>
+			<value>61.2255898</value>
 		</property>
 		<property name="qualityA">
 			<value>0.686068952</value>

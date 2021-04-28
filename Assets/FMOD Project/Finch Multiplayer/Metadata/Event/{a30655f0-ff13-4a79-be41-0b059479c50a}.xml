@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{a30655f0-ff13-4a79-be41-0b059479c50a}">
 		<property name="name">
-			<value>Удержание молнии как эффекта</value>
+			<value>Holding lightning as an effect</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>

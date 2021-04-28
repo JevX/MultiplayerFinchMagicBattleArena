@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Bank" id="{1f48f107-686d-4325-b27b-bf0d09fb31f5}">
 		<property name="name">
-			<value>Телекинез</value>
+			<value>Telekinesis</value>
 		</property>
 		<relationship name="folder">
 			<destination>{e97544c3-4d72-4ee0-9e53-c9697ca2769f}</destination>

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{8be24f1f-cf06-4b20-978a-f03363177b96}">
 		<property name="name">
-			<value>Попадание по противнику (без прокрутки)</value>
+			<value>Hitting the enemy (no scrolling)</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>

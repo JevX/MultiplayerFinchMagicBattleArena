@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{4048cc54-c018-494f-9655-cb1e3aaba964}">
 		<property name="name">
-			<value>Удар молнии</value>
+			<value>Kick lightning</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
@@ -135,14 +135,26 @@
 		<property name="filterTypeB">
 			<value>4</value>
 		</property>
+		<property name="filterTypeD">
+			<value>8</value>
+		</property>
 		<property name="frequencyA">
 			<value>17516.2949</value>
 		</property>
 		<property name="frequencyB">
-			<value>81.8291092</value>
+			<value>55.200367</value>
+		</property>
+		<property name="frequencyD">
+			<value>2446.88208</value>
 		</property>
 		<property name="qualityA">
 			<value>0.581413805</value>
+		</property>
+		<property name="qualityB">
+			<value>0.644206941</value>
+		</property>
+		<property name="gainD">
+			<value>5.17241478</value>
 		</property>
 	</object>
 </objects>
