@@ -12,9 +12,10 @@ namespace MAIN.Scripts.UI
         ConnectPhotonRoom,
         GameMain,
         GameResult,
-        PlayerLoginPopup,
-        GameModesPopup,
-        MultiplayerTypesPopup
+        GameSelection_PlayerLoginPopup,
+        GameSelection_GameModesPopup,
+        GameSelection_MultiplayerTypesPopup,
+        GameSelection_PlayerAvatarSelectionPopup
 
     }
 }

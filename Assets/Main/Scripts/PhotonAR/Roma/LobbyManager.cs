@@ -63,34 +63,34 @@ namespace Main.Scripts.PhotonAR.Roma
         #endregion
 
         #region UI Callback Methods
-        /// <summary>
-        /// Присваивает игроку имя и подключается к серверам Photon
-        /// </summary>
-        public void OnEnterGameButtonPress()
-        {
+        ///// <summary>
+        ///// Присваивает игроку имя и подключается к серверам Photon
+        ///// </summary>
+        //public void OnEnterGameButtonPress()
+        //{
 
-            string playerName = _playerNameInputField.text;
+        //    string playerName = _playerNameInputField.text;
 
-            if (!string.IsNullOrEmpty(playerName))
-            {
-                _loginPopup.SetActive(false);
-                _remoteMultiplayerLobbyPopup.SetActive(false);
+        //    if (!string.IsNullOrEmpty(playerName))
+        //    {
+        //        _loginPopup.SetActive(false);
+        //        _remoteMultiplayerLobbyPopup.SetActive(false);
 
-                _showConnectionStatus = true;
-                _connectionStatusPopup.SetActive(true);
+        //        _showConnectionStatus = true;
+        //        _connectionStatusPopup.SetActive(true);
 
 
-                if (!PhotonNetwork.IsConnected)
-                {
-                    PhotonNetwork.LocalPlayer.NickName = playerName;
-                    PhotonNetwork.ConnectUsingSettings();
-                }
-            }
-            else
-            {
-                Debug.Log("Player name is invalid or empty!");
-            }
-        }
+        //        if (!PhotonNetwork.IsConnected)
+        //        {
+        //            PhotonNetwork.LocalPlayer.NickName = playerName;
+        //            PhotonNetwork.ConnectUsingSettings();
+        //        }
+        //    }
+        //    else
+        //    {
+        //        Debug.Log("Player name is invalid or empty!");
+        //    }
+        //}
 
         //TO DO! Возможно будет нужно добавить промежуточную сцену между лобби и боевой ареной
         /// <summary>
