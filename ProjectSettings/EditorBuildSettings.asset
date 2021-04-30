@@ -6,23 +6,23 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/MAIN/Scenes/Roma/GameModeSelectionScene.unity
+    path: Assets/Main/Scenes/GameModeSelectionScene.unity
     guid: 81707ddff4bd0aa41b02574e9f580f7b
   - enabled: 1
-    path: Assets/MAIN/Scenes/GameMultiplayer.unity
+    path: Assets/Main/Scenes/RemoteMultyplayerLobbyScene.unity
+    guid: 1592dcec95619df47be666919a2086e4
+  - enabled: 1
+    path: Assets/Main/Scenes/RemoteMultiplayerBattleScene.unity
     guid: d2d63262a6a1eec4a9160e745dfff0e5
   - enabled: 1
-    path: Assets/MAIN/Scenes/Roma/LoadingScene.unity
-    guid: 8fdb94841424f5c47ae598fa7cf2f35a
-  - enabled: 1
-    path: Assets/MAIN/SINGLE/Scenes/ARDemoScene.unity
-    guid: 273d8c955866545f4ae8d1d93cd94f4b
-  - enabled: 1
-    path: Assets/MAIN/SINGLE/Scenes/ARLoadingScreen.unity
+    path: Assets/Main/SINGLE/Scenes/ARLoadingScreen.unity
     guid: beb1d27c283fa4d8fae88694bac8667f
   - enabled: 1
-    path: Assets/MAIN/Scenes/Roma/RemoteMultyplayerLobbyScene.unity
-    guid: 1592dcec95619df47be666919a2086e4
+    path: Assets/Main/SINGLE/Scenes/ARDemoScene.unity
+    guid: 273d8c955866545f4ae8d1d93cd94f4b
+  - enabled: 1
+    path: Assets/Main/Scenes/LoadingScene.unity
+    guid: 8fdb94841424f5c47ae598fa7cf2f35a
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2e8f5f59d8b9c4150844fe381af67542,
       type: 2}

@@ -4,20 +4,20 @@ using UnityEngine;
 public class GameModeLoader : MonoBehaviour
 {
     [Header("Game Modes Popup")]
-    [SerializeField] private GameObject _gameModes = null;// Блок с выбором игровых режимов - одиночный / мультиплеер
+    [SerializeField] private GameObject _gameModesPopup = null;// Блок с выбором игровых режимов - одиночный / мультиплеер
     [SerializeField] private string _singleplayerSceneName = null;
 
     [Space(2)]
 
     [Header("Multiplayer Types Popup")]
-    [SerializeField] private GameObject _multiplayerTypes = null;// Блок с выбором типа мультиплеера - спина к спине (облачные якоря) / удаленное соединение
+    [SerializeField] private GameObject _multiplayerTypesPopup = null;// Блок с выбором типа мультиплеера - спина к спине (облачные якоря) / удаленное соединение
     [SerializeField] private string _backToBackSceneName = null;
     [SerializeField] private string _remoteSceneName = null;
 
     private void Awake()
     {
-        _gameModes.SetActive(true);
-        _multiplayerTypes.SetActive(false);
+        _gameModesPopup.SetActive(true);
+        _multiplayerTypesPopup.SetActive(false);
     }
 
     #region UI Callback Methods

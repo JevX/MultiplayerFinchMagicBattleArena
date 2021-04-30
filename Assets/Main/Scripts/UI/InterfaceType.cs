@@ -11,6 +11,10 @@ namespace MAIN.Scripts.UI
         PlacementScene,
         ConnectPhotonRoom,
         GameMain,
-        GameResult
+        GameResult,
+        PlayerLoginPopup,
+        GameModesPopup,
+        MultiplayerTypesPopup
+
     }
 }
