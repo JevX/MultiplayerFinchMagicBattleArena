@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using Photon.Pun;
-using ExitGames.Client.Photon;
+using MAIN.Scripts.GameSettings;
 
 namespace MAIN.Scripts.UI
 {
@@ -23,13 +22,15 @@ namespace MAIN.Scripts.UI
         [SerializeField] private Button _nextAvatarImageButton = null;
         [SerializeField] private Button _selectAvatarImageButton = null;
 
+        private PlayerSettings _playerSettingsSO = null;// Ссылка на SO с настройками игрока
+
         private InputField _playerNameInputField = null;
 
         private int _currentAvatarIndex = 0;
 
         private void Awake()
         {
-            
+            _playerSettingsSO = Resources.Load<PlayerSettings>("ScriptableObjects/PlayerSettings");
         }
 
         // Start is called before the first frame update
@@ -48,10 +49,6 @@ namespace MAIN.Scripts.UI
             {
                 _playerAvatarImage.sprite = _playerAvatars[_currentAvatarIndex];
             }
-
-            Debug.Log($"_currentAvatarIndex {_currentAvatarIndex}");
-            Debug.Log($"_playerAvatars.Length {_playerAvatars.Length}");
-            Debug.Log($"_playerAvatarImage.sprite.name {_playerAvatarImage.sprite.name}");
         }
 
         private void OnDestroy()
@@ -66,7 +63,7 @@ namespace MAIN.Scripts.UI
 
         #region UNITY UI Methods
         /// <summary>
-        /// TO DO Сохраняет выбранное имя игрока в Scriptable Object
+        /// Сохраняет выбранное имя игрока в SO PlayerSettings
         /// </summary>
         private void OnEnterGameButtonPress()
         {
@@ -75,10 +72,7 @@ namespace MAIN.Scripts.UI
 
             if (!string.IsNullOrEmpty(playerName))
             {
-                if (!PhotonNetwork.IsConnected)
-                {
-                    PhotonNetwork.LocalPlayer.NickName = playerName;
-                }
+                _playerSettingsSO.playerName = playerName;
             }
             else
             {
@@ -127,13 +121,12 @@ namespace MAIN.Scripts.UI
         }
 
         /// <summary>
-        /// TO DO Сохраняет выбранный аватар в Scriptable Object
+        /// Сохраняет выбранный аватар в SO PlayerSettings
         /// </summary>
         private void SelectAvatarImage()
         {
             // Просто выбираем и сохраняем в SO
-            //Hashtable hashtable = new Hashtable();
-            //PhotonNetwork.LocalPlayer.
+            _playerSettingsSO.playerAvatarSprite = _playerAvatarImage.sprite;
         }
         #endregion
     }
