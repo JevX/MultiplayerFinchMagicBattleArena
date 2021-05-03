@@ -33,6 +33,7 @@ namespace Main.Scripts.PhotonAR.Roma
         // Start is called before the first frame update
         void Start()
         {
+            Debug.Log($"PhotonNetwork.IsConnected = {PhotonNetwork.IsConnected}");
             if (PhotonNetwork.IsConnected)
             {
                 // Инициализация элементов UI в случае, если установлено подключение к серверам Photon
@@ -58,6 +59,7 @@ namespace Main.Scripts.PhotonAR.Roma
             {
                 _connectionStatusText.text = $"Connection Status: {PhotonNetwork.NetworkClientState}";// Выводим текущее состояние подключения
             }
+
         }
 
         #endregion
@@ -106,21 +108,6 @@ namespace Main.Scripts.PhotonAR.Roma
             else
             {
                 Debug.Log("_battleSceneName is null or empty!");
-            }
-        }
-
-        /// <summary>
-        /// Возвращает на сцену с выбором игровых режимов (GameModeSelectionScene)
-        /// </summary>
-        public void OnBackButtonPress()
-        {
-            if (!string.IsNullOrEmpty(_sceneNameOnBackButton))
-            {
-                SceneLoader.Instance.LoadScene(_sceneNameOnBackButton);
-            }
-            else
-            {
-                Debug.Log("_sceneNameOnBackButton is null or empty!");
             }
         }
 

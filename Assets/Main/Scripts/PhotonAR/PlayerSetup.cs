@@ -13,7 +13,6 @@ namespace MAIN.Scripts.UI
 
         [Header("Player Avatars Images")]
         [SerializeField] private Image _playerAvatarImage = null;
-        [SerializeField] private Sprite[] _playerAvatars = null;
 
         [Space(2)]
 
@@ -23,6 +22,7 @@ namespace MAIN.Scripts.UI
         [SerializeField] private Button _selectAvatarImageButton = null;
 
         private PlayerSettings _playerSettingsSO = null;// Ссылка на SO с настройками игрока
+        private PlayerAvatars _playerAvatarsSO = null; // Ссылка на SO с коллекцией аватарок игрока
 
         private InputField _playerNameInputField = null;
 
@@ -31,6 +31,7 @@ namespace MAIN.Scripts.UI
         private void Awake()
         {
             _playerSettingsSO = Resources.Load<PlayerSettings>("ScriptableObjects/PlayerSettings");
+            _playerAvatarsSO = Resources.Load<PlayerAvatars>("ScriptableObjects/PlayerAvatars");
         }
 
         // Start is called before the first frame update
@@ -45,9 +46,9 @@ namespace MAIN.Scripts.UI
             _previousAvatarImageButton.onClick.AddListener(PreviousAvatarImage);
             _selectAvatarImageButton.onClick.AddListener(SelectAvatarImage);
 
-            if (_playerAvatars != null)
+            if (_playerAvatarsSO != null && _playerAvatarsSO.PlayerAvatarsCollection != null)
             {
-                _playerAvatarImage.sprite = _playerAvatars[_currentAvatarIndex];
+                _playerAvatarImage.sprite = _playerAvatarsSO.PlayerAvatarsCollection[_currentAvatarIndex];
             }
         }
 
@@ -85,18 +86,22 @@ namespace MAIN.Scripts.UI
         /// </summary>
         private void NextAvatarImage()
         {
-            if (_playerAvatars != null)
+            if (_playerAvatarsSO != null && _playerAvatarsSO.PlayerAvatarsCollection != null)
             {
-                if (_currentAvatarIndex + 1 <= _playerAvatars.Length - 1)
+                if (_currentAvatarIndex + 1 <= _playerAvatarsSO.PlayerAvatarsCollection.Length - 1)
                 {
                     _currentAvatarIndex++;
-                    _playerAvatarImage.sprite = _playerAvatars[_currentAvatarIndex];
+                    _playerAvatarImage.sprite = _playerAvatarsSO.PlayerAvatarsCollection[_currentAvatarIndex];
                 }
                 else
                 {
                     _currentAvatarIndex = 0;
-                    _playerAvatarImage.sprite = _playerAvatars[_currentAvatarIndex];
+                    _playerAvatarImage.sprite = _playerAvatarsSO.PlayerAvatarsCollection[_currentAvatarIndex];
                 }
+            }
+            else
+            {
+                Debug.Log("_playerAvatarsSO or _playerAvatarsSO.PlayerAvatarsCollection is null!");
             }
         }
 
@@ -105,18 +110,22 @@ namespace MAIN.Scripts.UI
         /// </summary>
         private void PreviousAvatarImage()
         {
-            if (_playerAvatars != null)
+            if (_playerAvatarsSO != null && _playerAvatarsSO.PlayerAvatarsCollection != null)
             {
                 if (_currentAvatarIndex - 1 >= 0)
                 {
                     _currentAvatarIndex--;
-                    _playerAvatarImage.sprite = _playerAvatars[_currentAvatarIndex];
+                    _playerAvatarImage.sprite = _playerAvatarsSO.PlayerAvatarsCollection[_currentAvatarIndex];
                 }
                 else
                 {
-                    _currentAvatarIndex = _playerAvatars.Length - 1;
-                    _playerAvatarImage.sprite = _playerAvatars[_currentAvatarIndex];
+                    _currentAvatarIndex = _playerAvatarsSO.PlayerAvatarsCollection.Length - 1;
+                    _playerAvatarImage.sprite = _playerAvatarsSO.PlayerAvatarsCollection[_currentAvatarIndex];
                 }
+            }
+            else
+            {
+                Debug.Log("_playerAvatarsSO or _playerAvatarsSO.PlayerAvatarsCollection is null!");
             }
         }
 
@@ -126,7 +135,16 @@ namespace MAIN.Scripts.UI
         private void SelectAvatarImage()
         {
             // Просто выбираем и сохраняем в SO
-            _playerSettingsSO.playerAvatarSprite = _playerAvatarImage.sprite;
+            if (_playerSettingsSO != null)
+            {
+                _playerSettingsSO.playerAvatarSprite = _playerAvatarImage.sprite;
+                _playerSettingsSO.playerAvatarSpriteIndex = _currentAvatarIndex;
+            }
+            else
+            {
+                Debug.Log("_playerSettingsSO is null!");
+            }
+          
         }
         #endregion
     }

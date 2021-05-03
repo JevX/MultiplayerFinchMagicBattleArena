@@ -15,7 +15,8 @@ namespace MAIN.Scripts.UI
         GameSelection_PlayerLoginPopup,
         GameSelection_GameModesPopup,
         GameSelection_MultiplayerTypesPopup,
-        GameSelection_PlayerAvatarSelectionPopup
+        GameSelection_PlayerAvatarSelectionPopup,
+        GameSelection_ConnectionStatusPopup
 
     }
 }
