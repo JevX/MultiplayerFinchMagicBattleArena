@@ -73,7 +73,6 @@ namespace MAIN.Scripts.UI
             if (!string.IsNullOrEmpty(_singleplayerSceneName))
             {
                 SceneLoadManager.Instance.LoadScene(_singleplayerSceneName);
-                //UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(_singleplayerSceneName);
             }
             else
             {
@@ -98,7 +97,6 @@ namespace MAIN.Scripts.UI
             if (!string.IsNullOrEmpty(_remoteSceneName))
             {
                 SceneLoadManager.Instance.LoadScene(_remoteSceneName);
-                //UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(_remoteSceneName);
             }
             else
             {

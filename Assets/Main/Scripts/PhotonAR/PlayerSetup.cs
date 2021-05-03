@@ -55,11 +55,11 @@ namespace MAIN.Scripts.UI
         private void OnDestroy()
         {
             // Removing Button listeners
-            _enterGameButton.onClick.RemoveListener(OnEnterGameButtonPress);
+            _enterGameButton.onClick.RemoveAllListeners();
 
-            _nextAvatarImageButton.onClick.RemoveListener(NextAvatarImage);
-            _previousAvatarImageButton.onClick.RemoveListener(PreviousAvatarImage);
-            _selectAvatarImageButton.onClick.AddListener(SelectAvatarImage);
+            _nextAvatarImageButton.onClick.RemoveAllListeners();
+            _previousAvatarImageButton.onClick.RemoveAllListeners();
+            _selectAvatarImageButton.onClick.RemoveAllListeners();
         }
 
         #region UNITY UI Methods
