@@ -490,7 +490,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 5fbbd58cbfcf48e4399d751e484a5215, type: 3}
+    m_Font: {fileID: 12800000, guid: 023bda9b2a6be534fbb90f05cb72f5f0, type: 3}
     m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
@@ -708,7 +708,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 328f3a3476b5b364687ed16a24429c8d, type: 3}
+    m_Font: {fileID: 12800000, guid: 023bda9b2a6be534fbb90f05cb72f5f0, type: 3}
     m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 0
@@ -720,7 +720,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Remote Multiplayer Lobby
+  m_Text: "Remote Multiplayer \nLobby"
 --- !u!222 &1082383044
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -900,7 +900,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 5fbbd58cbfcf48e4399d751e484a5215, type: 3}
+    m_Font: {fileID: 12800000, guid: 023bda9b2a6be534fbb90f05cb72f5f0, type: 3}
     m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0

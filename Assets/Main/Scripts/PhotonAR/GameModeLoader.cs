@@ -1,16 +1,18 @@
 ﻿//24.04.2021 Roman Baranov
-using Main.Scripts;
+
 using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
 using System.Collections;
 using MAIN.Scripts.GameSettings;
-using ExitGames.Client.Photon;
+using UnityEngine.SceneManagement;
+using Main.Scripts;
 
 namespace MAIN.Scripts.UI
 {
     public class GameModeLoader : MonoBehaviour
     {
+        #region VARIABLES
         [Header("Singleplayer Mode")]
         [SerializeField] private string _singleplayerSceneName = null;
         [SerializeField] private Button _singlePlayerModeButton = null;
@@ -19,6 +21,7 @@ namespace MAIN.Scripts.UI
 
         [Header("Multiplayer Modes")]
         [SerializeField] private string _backToBackSceneName = null;
+
         [SerializeField] private Button _multiplayerModeButton = null;
         [SerializeField] private Button _multiplayerTypeBackToBackButton = null;
 
@@ -33,7 +36,9 @@ namespace MAIN.Scripts.UI
 
         private PlayerSettings _playerSettingsSO = null;
 
+        #endregion
 
+        #region UNITY Methods
         private void Awake()
         {
             UIInterfaceController.Instance.OpenInterface(InterfaceType.GameSelection_PlayerLoginPopup);
@@ -56,6 +61,7 @@ namespace MAIN.Scripts.UI
             _multiplayerTypeBackToBackButton.onClick.RemoveAllListeners();
             _multiplayerTypeRemoteConnectButton.onClick.RemoveAllListeners();
         }
+        #endregion
 
         #region UI Callback Methods
         /// <summary>
@@ -67,6 +73,7 @@ namespace MAIN.Scripts.UI
             if (!string.IsNullOrEmpty(_singleplayerSceneName))
             {
                 SceneLoadManager.Instance.LoadScene(_singleplayerSceneName);
+                //UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(_singleplayerSceneName);
             }
             else
             {
@@ -74,6 +81,9 @@ namespace MAIN.Scripts.UI
             }
         }
 
+        /// <summary>
+        /// Подключает к Photon
+        /// </summary>
         private void OnMultiplayerButtonPress()
         {
             ConnectToPhoton();
@@ -85,10 +95,10 @@ namespace MAIN.Scripts.UI
         private void OnRemoteMultiplayerButtonPress()
         {
             // Загружаю сцену
-
             if (!string.IsNullOrEmpty(_remoteSceneName))
             {
                 SceneLoadManager.Instance.LoadScene(_remoteSceneName);
+                //UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(_remoteSceneName);
             }
             else
             {
@@ -120,16 +130,21 @@ namespace MAIN.Scripts.UI
         /// </summary>
         private void ConnectToPhoton()
         {
-            Debug.Log($"PhotonNetwork.IsConnected = {PhotonNetwork.IsConnected}");
-            Debug.Log($"LocalPlayer.NickName = {PhotonNetwork.LocalPlayer.NickName}");
             if (!PhotonNetwork.IsConnected) StartCoroutine(ConnectionToPhoton());
         }
 
+        /// <summary>
+        /// Курутина для ConnectToPhoton(), подключающая игрока к Photon
+        /// </summary>
+        /// <returns></returns>
         private IEnumerator ConnectionToPhoton()
         {
             UIInterfaceController.Instance.OpenInterface(InterfaceType.GameSelection_ConnectionStatusPopup);
+
             float currentWait = 0;
             PhotonNetwork.GameVersion = Application.version; //TODO возможно убрать 
+
+            // Присваиваю имя игроку
             PhotonNetwork.LocalPlayer.NickName = _playerSettingsSO.playerName;
 
             // Добавляю индекс аватара в Hashtable для LocalPlayer.CustomProperties
@@ -138,6 +153,7 @@ namespace MAIN.Scripts.UI
             PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
 
             PhotonNetwork.ConnectUsingSettings();
+
             while (currentWait < _waitToConnect)
             {
                 if (PhotonNetwork.IsConnected) break;
@@ -150,10 +166,6 @@ namespace MAIN.Scripts.UI
                 _connectionStatusPopupText.text = $"Connection Error: {PhotonNetwork.NetworkClientState}";
                 UIInterfaceController.Instance.OpenInterface(InterfaceType.GameSelection_GameModesPopup); // TODO возможно добавить сообщение об ошибке
             }
-
-            Debug.Log($"PhotonNetwork.IsConnected = {PhotonNetwork.IsConnected}");
-            Debug.Log($"LocalPlayer.NickName = {PhotonNetwork.LocalPlayer.NickName}");
-            Debug.Log($"LocalPlayer.CustomProperties['Avatar'] = {PhotonNetwork.LocalPlayer.CustomProperties["Avatar"]}");
         }
         #endregion
     }

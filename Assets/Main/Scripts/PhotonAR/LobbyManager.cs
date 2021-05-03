@@ -7,12 +7,6 @@ namespace Main.Scripts.PhotonAR.Roma
 {
     public class LobbyManager : MonoBehaviourPunCallbacks
     {
-        [Header("Player Login Popup")]
-        [SerializeField] private GameObject _loginPopup = null;// Попап логина в игру
-        [SerializeField] private InputField _playerNameInputField = null;// Поле для ввода имени игрока
-
-        [Space(2)]
-
         [Header("Multiplayer Lobby Popup")]
         [SerializeField] private GameObject _remoteMultiplayerLobbyPopup = null;// Попап с подключением к матчу
 
@@ -34,13 +28,14 @@ namespace Main.Scripts.PhotonAR.Roma
         void Start()
         {
             Debug.Log($"PhotonNetwork.IsConnected = {PhotonNetwork.IsConnected}");
+
             if (PhotonNetwork.IsConnected)
             {
                 // Инициализация элементов UI в случае, если установлено подключение к серверам Photon
                 _remoteMultiplayerLobbyPopup.SetActive(true);
                 _connectionStatusPopup.SetActive(false);
 
-                _loginPopup.SetActive(false);
+                //_loginPopup.SetActive(false);
             }
             else
             {
@@ -48,7 +43,7 @@ namespace Main.Scripts.PhotonAR.Roma
                 _remoteMultiplayerLobbyPopup.SetActive(false);
                 _connectionStatusPopup.SetActive(false);
 
-                _loginPopup.SetActive(true);
+               // _loginPopup.SetActive(true);
             }
         }
 
@@ -128,7 +123,7 @@ namespace Main.Scripts.PhotonAR.Roma
         /// </summary>
         public override void OnConnectedToMaster()
         {
-            _loginPopup.SetActive(false);
+            //_loginPopup.SetActive(false);
             _connectionStatusPopup.SetActive(false);
 
             _remoteMultiplayerLobbyPopup.SetActive(true);

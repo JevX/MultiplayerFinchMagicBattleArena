@@ -25,8 +25,6 @@ namespace Main.Scripts
             StartCoroutine(InitializeSceneLoading());
         }
 
-
-
         IEnumerator InitializeSceneLoading()
         {
             //First, we load the Loading scene
@@ -53,16 +51,8 @@ namespace Main.Scripts
                     asyncSceneLoading.allowSceneActivation = true; 
                 }
 
-
                 yield return null;
-
             }
-
-
-        
-
         }
-
-
     }
 }
