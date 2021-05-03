@@ -6,6 +6,7 @@ namespace MAIN.Scripts.UI
 {
     public class PlayerSetup : MonoBehaviour
     {
+        #region VARIABLES
         [Header("Enter Game Button")]
         [SerializeField] private Button _enterGameButton = null;
 
@@ -27,7 +28,9 @@ namespace MAIN.Scripts.UI
         private InputField _playerNameInputField = null;
 
         private int _currentAvatarIndex = 0;
+        #endregion
 
+        #region UNITY Methods
         private void Awake()
         {
             _playerSettingsSO = Resources.Load<PlayerSettings>("ScriptableObjects/PlayerSettings");
@@ -55,12 +58,13 @@ namespace MAIN.Scripts.UI
         private void OnDestroy()
         {
             // Removing Button listeners
-            _enterGameButton.onClick.RemoveAllListeners();
+            _enterGameButton?.onClick.RemoveAllListeners();
 
-            _nextAvatarImageButton.onClick.RemoveAllListeners();
-            _previousAvatarImageButton.onClick.RemoveAllListeners();
-            _selectAvatarImageButton.onClick.RemoveAllListeners();
+            _nextAvatarImageButton?.onClick.RemoveAllListeners();
+            _previousAvatarImageButton?.onClick.RemoveAllListeners();
+            _selectAvatarImageButton?.onClick.RemoveAllListeners();
         }
+        #endregion
 
         #region UNITY UI Methods
         /// <summary>

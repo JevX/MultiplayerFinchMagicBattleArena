@@ -1,5 +1,6 @@
 namespace MAIN.Scripts.UI
 {
+    #region VARIABLES
     public enum InterfaceType
     {
         SetName,
@@ -19,4 +20,5 @@ namespace MAIN.Scripts.UI
         GameSelection_ConnectionStatusPopup
 
     }
+    #endregion
 }

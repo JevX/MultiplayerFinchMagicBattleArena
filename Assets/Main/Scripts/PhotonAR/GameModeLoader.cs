@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using Photon.Pun;
 using System.Collections;
 using MAIN.Scripts.GameSettings;
-using UnityEngine.SceneManagement;
 using Main.Scripts;
 
 namespace MAIN.Scripts.UI
@@ -56,10 +55,10 @@ namespace MAIN.Scripts.UI
 
         private void OnDestroy()
         {
-            _singlePlayerModeButton.onClick.RemoveAllListeners();
-            _multiplayerModeButton.onClick.RemoveAllListeners();
-            _multiplayerTypeBackToBackButton.onClick.RemoveAllListeners();
-            _multiplayerTypeRemoteConnectButton.onClick.RemoveAllListeners();
+            _singlePlayerModeButton?.onClick.RemoveAllListeners();
+            _multiplayerModeButton?.onClick.RemoveAllListeners();
+            _multiplayerTypeBackToBackButton?.onClick.RemoveAllListeners();
+            _multiplayerTypeRemoteConnectButton?.onClick.RemoveAllListeners();
         }
         #endregion
 
