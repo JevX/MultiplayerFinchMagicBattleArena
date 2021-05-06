@@ -101,6 +101,7 @@ namespace MAIN.Scripts.UI
             {
                 Debug.Log("_remoteSceneName is null or empty!");
             }
+
         }
 
         /// <summary>

@@ -9,11 +9,8 @@ EditorBuildSettings:
     path: Assets/Main/Scenes/GameModeSelectionScene.unity
     guid: 81707ddff4bd0aa41b02574e9f580f7b
   - enabled: 1
-    path: Assets/Main/Scenes/RemoteMultyplayerLobbyScene.unity
-    guid: 1592dcec95619df47be666919a2086e4
-  - enabled: 1
     path: Assets/Main/Scenes/RemoteMultiplayerBattleScene.unity
-    guid: d2d63262a6a1eec4a9160e745dfff0e5
+    guid: 9f32c552946b12f499a1e528150dd3a7
   - enabled: 1
     path: Assets/Main/SINGLE/Scenes/ARLoadingScreen.unity
     guid: beb1d27c283fa4d8fae88694bac8667f
