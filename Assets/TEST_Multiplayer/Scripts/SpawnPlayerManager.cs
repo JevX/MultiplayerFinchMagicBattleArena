@@ -73,5 +73,6 @@ public class SpawnPlayerManager : MonoBehaviourPunCallbacks
         Vector3 instantiatePosition = Vector3.zero; //TODO
         playerGameobject2 = PhotonNetwork.Instantiate("PLAYER", instantiatePosition, Quaternion.identity);
         playerGameobject2.transform.SetParent(cameraAR);
+        playerGameobject2.transform.localPosition = Vector3.zero;
     }
 }

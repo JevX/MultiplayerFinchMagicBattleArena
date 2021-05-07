@@ -1,4 +1,5 @@
 ﻿using System;
+using Photon.Pun;
 using UnityEngine;
 
 namespace MAIN.Scripts.Tests
@@ -8,7 +9,6 @@ namespace MAIN.Scripts.Tests
         [SerializeField] private float speedMove = 5;
         [SerializeField] private float speedRotate = 5;
         [SerializeField] private GameObject spellPrefab = null;
-        [SerializeField] private Transform spellCastPosition = null;
         [SerializeField] private float forceSpell = 100;
 
         private Transform _transform;
@@ -49,8 +49,8 @@ namespace MAIN.Scripts.Tests
 
         private void Attack()
         {
-            Instantiate(spellPrefab, spellCastPosition.position, Quaternion.identity).GetComponent<Rigidbody>()
-                .AddForce(transform.forward * forceSpell);
+            GameObject playerGO = PhotonNetwork.Instantiate("Spell", transform.position + transform.forward, Quaternion.identity);
+            playerGO.GetComponent<Rigidbody>().AddForce(transform.forward * forceSpell);
         }
     }
 }
