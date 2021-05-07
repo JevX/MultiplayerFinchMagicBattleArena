@@ -1,24 +1,28 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
 namespace Main.Scripts
 {
     public class SceneLoadManager : MonoBehaviour
     {
+        #region VARIABLES
         [SerializeField] private string nameSceneLoad = null;
 
         public static SceneLoadManager Instance = null;
-        
-        private string sceneNameToBeLoaded;
 
+        private string sceneNameToBeLoaded = null;
+        #endregion
+
+        #region UNITY Methods
         private void Awake()
         {
             if (Instance == null) Instance = this;
             else Destroy(gameObject);
             DontDestroyOnLoad(gameObject);
         }
+        #endregion
 
+        #region PUBLIC Methods
         public void LoadScene(string _sceneName)
         {
             sceneNameToBeLoaded = _sceneName;
@@ -45,14 +49,15 @@ namespace Main.Scripts
             {
                 Debug.Log(asyncSceneLoading.progress);
 
-                if (asyncSceneLoading.progress >= 0.9f )
+                if (asyncSceneLoading.progress >= 0.9f)
                 {
                     //Finally, show the scene.
-                    asyncSceneLoading.allowSceneActivation = true; 
+                    asyncSceneLoading.allowSceneActivation = true;
                 }
 
                 yield return null;
             }
         }
+        #endregion
     }
 }

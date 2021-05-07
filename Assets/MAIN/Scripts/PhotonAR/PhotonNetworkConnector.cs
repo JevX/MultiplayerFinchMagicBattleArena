@@ -1,6 +1,4 @@
-﻿
-using System;
-using System.Collections;
+﻿using System.Collections;
 using Photon.Pun;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,6 +7,7 @@ namespace Main.Scripts.PhotonAR
 {
     public class PhotonNetworkConnector : MonoBehaviourPunCallbacks
     {
+        #region VARIABLES
         [SerializeField] private float waitToConnect = 10;
         [Header("Окно выбора сцены")] 
         [SerializeField] private GameObject SelectPanel = null;
@@ -24,27 +23,24 @@ namespace Main.Scripts.PhotonAR
         [SerializeField] private string nameConnectNetwork = null;
         
         private string selectNextSceneName = null;
-        
+        #endregion
+
+        #region UNITY Methods
+
         private void Start()
         {
             btnConnectLocal.onClick.AddListener(() => { OnConnectPhotonNetwork(nameSceneLocal);});
             btnConnectNetwork.onClick.AddListener(() => { OnConnectPhotonNetwork(nameConnectNetwork);});
         }
 
-
         private void OnDestroy()
         {
             btnConnectLocal.onClick.RemoveAllListeners();
             btnConnectNetwork.onClick.RemoveAllListeners();
         }
+        #endregion
 
-        private void OnConnectPhotonNetwork(string nextScene)
-        {
-            selectNextSceneName = nextScene;
-            if (!PhotonNetwork.IsConnected) StartCoroutine(ConnectionToPhoton());
-            else SceneLoadManager.Instance.LoadScene(selectNextSceneName);
-        }
-    
+        #region PUBLIC Methods
         public override void OnConnected()
         {
             Debug.Log("Мы подключены к фотону");
@@ -53,8 +49,18 @@ namespace Main.Scripts.PhotonAR
         public override void OnConnectedToMaster()
         {
             Debug.Log(PhotonNetwork.LocalPlayer.NickName + " подключен к серверу");
-            
+
             SceneLoadManager.Instance.LoadScene(selectNextSceneName);
+        }
+
+        #endregion
+
+        #region PRIVATE Methods
+        private void OnConnectPhotonNetwork(string nextScene)
+        {
+            selectNextSceneName = nextScene;
+            if (!PhotonNetwork.IsConnected) StartCoroutine(ConnectionToPhoton());
+            else SceneLoadManager.Instance.LoadScene(selectNextSceneName);
         }
 
         private void SetActiveLoadPanel(bool isActive)
@@ -78,6 +84,6 @@ namespace Main.Scripts.PhotonAR
             }
             if (!PhotonNetwork.IsConnected)  SetActiveLoadPanel(false); // TODO возможно добавить сообщение об ошибке
         }
-
+        #endregion
     }
 }

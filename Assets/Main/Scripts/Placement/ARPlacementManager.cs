@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿// Modifyed by Roman Baranov 07.05.2021
+
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
@@ -6,42 +7,36 @@ using UnityEngine.XR.ARSubsystems;
 
 public class ARPlacementManager : MonoBehaviour
 {
-
-    ARRaycastManager m_ARRaycastManager;
+    #region VARIABLES
+    private ARRaycastManager m_ARRaycastManager = null;
     static List<ARRaycastHit> raycast_Hits = new List<ARRaycastHit>();
 
-    public Camera aRCamera;
+    [SerializeField] private Camera _aRCamera = null;
 
-    public GameObject battleArenaGameobject;
+    [SerializeField] private GameObject _placementLand = null;
+    #endregion
 
-
+    #region UNITY Methods
     private void Awake()
     {
         m_ARRaycastManager = GetComponent<ARRaycastManager>();
-    }
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
     }
 
     // Update is called once per frame
     void Update()
     {
         Vector3 centerOfScreen = new Vector3(Screen.width / 2, Screen.height / 2);
-        Ray ray = aRCamera.ScreenPointToRay(centerOfScreen);
+        Ray ray = _aRCamera.ScreenPointToRay(centerOfScreen);
 
         if (m_ARRaycastManager.Raycast(ray,raycast_Hits,TrackableType.PlaneWithinPolygon))
         {
-
             //Intersection!
             Pose hitPose = raycast_Hits[0].pose;
 
             Vector3 positionToBePlaced = hitPose.position;
 
-            battleArenaGameobject.transform.position = positionToBePlaced;
+            _placementLand.transform.position = positionToBePlaced;
         }
     }
+    #endregion
 }
