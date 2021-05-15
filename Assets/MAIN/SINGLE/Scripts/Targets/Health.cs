@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using MoreMountains.Tools;
+using Wand;
 
 public class Health : MonoBehaviour, MMEventListener<MMGameEvent>
 {

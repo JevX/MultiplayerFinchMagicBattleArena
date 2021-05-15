@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Wand;
 using UnityEngine;
 
 public class EnchantmentGlyph : MonoBehaviour

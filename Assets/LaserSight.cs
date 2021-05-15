@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Wand;
 
 public class LaserSight : MonoBehaviour
 {
-    [SerializeField] private MagicWand magicWand;
+    private MagicWandController MagicWand => MagicWandController.Instance;
     [SerializeField] private LineRenderer laserRenderer;
     bool laserActive;
     [SerializeField] float maxLaserLength;
@@ -38,7 +39,8 @@ public class LaserSight : MonoBehaviour
 
     public void ProcessLaserPointer()
     {
-        if (Physics.Raycast(magicWand.wandEndPosition.position, magicWand.wandEndPosition.forward, out laserTargetHit))
+        if (MagicWand == null) return;
+        if (Physics.Raycast(MagicWand.wandEndPosition.position, MagicWand.wandEndPosition.forward, out laserTargetHit))
             positions[1] = Vector3.forward * laserTargetHit.distance;
         else
             positions[1] = Vector3.forward * maxLaserLength;

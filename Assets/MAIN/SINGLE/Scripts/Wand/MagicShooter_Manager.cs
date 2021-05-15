@@ -4,6 +4,7 @@ using UnityEngine;
 using MoreMountains.Tools;
 using MoreMountains.Feedbacks;
 using System.Linq;
+using Wand;
 
 public class MagicShooter_Manager : MonoBehaviour
 {
@@ -23,10 +24,7 @@ public class MagicShooter_Manager : MonoBehaviour
     private void Awake()
     {
         myWand = GetComponent<MagicWand>();
-        foreach (MagicShooter shooter in shootersList)
-        {
-            shooter.RegisterShooter(this);
-        }
+ 
     }
 
     public void ResetAllShooters()

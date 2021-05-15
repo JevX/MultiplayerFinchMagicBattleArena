@@ -1,78 +1,44 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using ExitGames.Client.Photon;
+﻿using ExitGames.Client.Photon;
 using Photon.Pun;
-using Photon.Realtime;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SpawnPlayerManager : MonoBehaviourPunCallbacks
+namespace MAIN.Spawn
 {
-    [SerializeField] private GameObject playerPrefab;
-
-    [SerializeField] private GameObject mainObject;
-
-    [SerializeField] private Transform cameraAR;
-    [SerializeField] private Text textDebug;
-    
-    public enum RaiseEventCodes
+    public class SpawnPlayerManager : MonoBehaviourPunCallbacks
     {
-        PlayerSpawnEventCode = 0
-    }
+        [SerializeField] private GameObject playerPrefab;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        PhotonNetwork.NetworkingClient.EventReceived += OnEvent;
-    }
+        [Header("Площадка, которую игрок размещает в AR")]
+        [SerializeField] private GameObject mainObject;
 
-    private void Update()
-    {
-        if (playerGameobject2 != null) textDebug.text = $"{name} {transform.rotation} + {transform.localRotation}";
-    }
+        [Header("Камера-родитель игрока")]
+        [SerializeField] private Transform cameraAR;
+        
+        [Header("начальные Координаты создания игрока")]
+        [SerializeField] private Vector3 instantiatePosition = Vector3.zero; 
 
-    private void OnDestroy()
-    {
-        PhotonNetwork.NetworkingClient.EventReceived -= OnEvent;
-    }
-    
-    
-    private void OnEvent(EventData photonEvent)
-    {
-        AddDebugText($"ивент {photonEvent.Code}");
-        if (photonEvent.Code == (byte)RaiseEventCodes.PlayerSpawnEventCode)
+        [Header("Создание игрока относительно камеры")]
+        [SerializeField] private Vector3 localPosition = Vector3.zero; 
+        
+        private GameObject playerGameobject2 =null;
+
+        // PunCallback
+        public override void OnJoinedRoom()
         {
-            object[] data = (object[])photonEvent.CustomData;
-            Vector3 receivedPosition = (Vector3)data[0];
-            Quaternion receivedRotation = (Quaternion)data[1];
-
-            GameObject player = Instantiate(playerPrefab, receivedPosition + mainObject.transform.position, receivedRotation);
-            PhotonView photonView = player.GetComponent<PhotonView>();
-            photonView.ViewID = (int)data[2];
+            Debug.Log($"присоеденен к комнате {PhotonNetwork.CurrentRoom.Name}  {PhotonNetwork.CurrentRoom.Players.Count}");
+            if (PhotonNetwork.IsConnectedAndReady)
+            {
+                SpawnPlayer();
+            }
         }
-    }
-    
-    public override void OnJoinedRoom()
-    {
-        AddDebugText($"присоеденен к комнате {PhotonNetwork.CurrentRoom.Name}  {PhotonNetwork.CurrentRoom.Players.Count}");
-        if (PhotonNetwork.IsConnectedAndReady)
+
+        private void SpawnPlayer()
         {
-            SpawnPlayer();
+            // создаем для обоих, но камеру делаем родителем только для текущего
+            playerGameobject2 = PhotonNetwork.Instantiate("PLAYER", instantiatePosition, Quaternion.identity);
+            playerGameobject2.transform.SetParent(cameraAR);
+            playerGameobject2.transform.localPosition = localPosition;
         }
-    }
-
-    private void AddDebugText(string text)
-    {
-        textDebug.text = $"{textDebug.text}\n{text}";
-    }
-
-    private GameObject playerGameobject2 =null;
-    private void SpawnPlayer()
-    {
-        Vector3 instantiatePosition = Vector3.zero; //TODO
-        playerGameobject2 = PhotonNetwork.Instantiate("PLAYER", instantiatePosition, Quaternion.identity);
-        playerGameobject2.transform.SetParent(cameraAR);
-        playerGameobject2.transform.localPosition = Vector3.zero;
     }
 }

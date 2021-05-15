@@ -13,9 +13,11 @@ namespace MAIN.Scripts.Tests
 
         private Transform _transform;
 
+        public MagicShooter_Manager shooter;
         private void Awake()
         {
             _transform = transform;
+            
         }
 
         void Update()

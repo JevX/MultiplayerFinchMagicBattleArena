@@ -1,6 +1,7 @@
 ﻿using MoreMountains.Tools;
 using System.Collections;
 using System.Collections.Generic;
+using Wand;
 using UnityEngine;
 
 public class ProgressionManager : MMSingleton<ProgressionManager>, MMEventListener<MMGameEvent>

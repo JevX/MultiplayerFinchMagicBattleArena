@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace Main.Scripts.PhotonAR
 {
+    /// <summary>
+    /// стандартная синхронизация от photona с добавлением точки относительности - основного игрового объекта
+    /// </summary>
     public class PhotonTransformViewAR : MonoBehaviourPun, IPunObservable
     {   
         public bool m_SynchronizePosition = true;

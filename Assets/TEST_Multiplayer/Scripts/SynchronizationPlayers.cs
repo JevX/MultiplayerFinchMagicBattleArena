@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using Photon.Pun;
 using UnityEngine;
 
+/// <summary>
+/// Тест скрипт
+/// </summary>
 public class SynchronizationPlayers : MonoBehaviourPun, IPunObservable
 {
     private GameObject MainObject = null;

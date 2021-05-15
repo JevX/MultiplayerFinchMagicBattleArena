@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Finch;
+using MAIN.Wand;
+using Wand;
 
 public class MagicWand : MMSingleton<MagicWand>
 {
@@ -21,7 +23,6 @@ public class MagicWand : MMSingleton<MagicWand>
     public bool isDrawing { get; private set; }
 
     MagicShooter_Manager magicShooter;
-    WandInput wandInput;
     public WandGestureRecognizer wandGesture;
 
     public GameObject FireEffect;
@@ -49,8 +50,6 @@ public class MagicWand : MMSingleton<MagicWand>
 
         wandGesture = GetComponent<WandGestureRecognizer>();
         magicShooter = GetComponent<MagicShooter_Manager>();
-        wandInput = GetComponent<WandInput>();
-        wandInput.RegisterMe(this);
         wandGesture.RegisterMe(this);
 
         ChangeMagicType(MagicType.None);

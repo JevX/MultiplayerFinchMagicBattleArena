@@ -5,20 +5,26 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Main/Scenes/GameModeSelectionScene.unity
+  - enabled: 0
+    path: Assets/MAIN/Scenes/GameModeSelectionScene.unity
     guid: 81707ddff4bd0aa41b02574e9f580f7b
-  - enabled: 1
-    path: Assets/Main/Scenes/RemoteMultiplayerBattleScene.unity
+  - enabled: 0
+    path: Assets/MAIN/Scenes/RemoteMultiplayerBattleScene.unity
     guid: 9f32c552946b12f499a1e528150dd3a7
-  - enabled: 1
-    path: Assets/Main/SINGLE/Scenes/ARLoadingScreen.unity
+  - enabled: 0
+    path: Assets/MAIN/SINGLE/Scenes/ARLoadingScreen.unity
     guid: beb1d27c283fa4d8fae88694bac8667f
-  - enabled: 1
-    path: Assets/Main/SINGLE/Scenes/ARDemoScene.unity
+  - enabled: 0
+    path: Assets/MAIN/SINGLE/Scenes/ARDemoScene.unity
     guid: 273d8c955866545f4ae8d1d93cd94f4b
   - enabled: 1
-    path: Assets/Main/Scenes/LoadingScene.unity
+    path: Assets/TEST_Multiplayer/Scenes/TestConnectARMultiplayer.unity
+    guid: c94aa3e5caa7d70448b005a840b494b1
+  - enabled: 1
+    path: Assets/TEST_Multiplayer/Scenes/TestARMultiplayer.unity
+    guid: 321492c0baff4704cadb10f8fcc634d7
+  - enabled: 1
+    path: Assets/MAIN/Scenes/LoadingScene.unity
     guid: 8fdb94841424f5c47ae598fa7cf2f35a
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2e8f5f59d8b9c4150844fe381af67542,

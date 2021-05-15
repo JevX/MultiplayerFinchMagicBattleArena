@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace Main.PhotonAR
 {
+    /// <summary>
+    /// стандартная синхронизация от photona с добавлением точки относительности - основного игрового объекта + берет ротацию от камеры, как родительского объекта игрока
+    /// </summary>
     public class PhotonTransformViewARPlayer : PhotonTransformViewAR
     {
         [SerializeField] private string nameCameraOnScene = "AR Camera";
